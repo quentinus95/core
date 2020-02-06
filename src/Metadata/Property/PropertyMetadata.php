@@ -150,10 +150,6 @@ final class PropertyMetadata
      */
     public function isRequired(): ?bool
     {
-        if (true === $this->required && false === $this->writable) {
-            return false;
-        }
-
         return $this->required;
     }
 
